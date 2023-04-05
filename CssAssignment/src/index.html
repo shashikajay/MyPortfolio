@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="FirstStyle.css">
+
+  <style>
+    body{
+      border: 1px solid black;
+    }
+    section{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      border: 1px solid black;
+    }
+
+    section>div:first-child{
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+    }
+
+    section>div:nth-child(2){
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      right: 0;
+    }
+
+    section>div:nth-child(3){
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    section>div:nth-child(4){
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    section>div:nth-child(5){
+      border-bottom-right-radius: 100px;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background-color: white;
+      left: 0;
+      top: 0;
+    }
+
+    section>div:nth-child(6){
+      border-bottom-left-radius: 100px;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      top: 0;
+    }
+
+    section>div:nth-child(7){
+      border-top-right-radius: 100px;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background-color: white;
+      left: 0;
+      bottom: 0;
+    }
+
+    section>div:nth-child(8){
+      border-top-left-radius: 100px;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      bottom: 0;
+    }
+
+    section>div:nth-child(9){
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      width: 140px;
+      height: 70px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    section>div:nth-child(10){
+      border-radius: 100px;
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      left: 0;
+      top: -70px;
+      margin: auto;
+    }
+
+    section>div:nth-child(11){
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+      width: 70px;
+      height: 140px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    section>div:nth-child(12){
+      border-radius: 100px;
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      background-color: white;
+      left: -70px;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    section>div:nth-child(13){
+      position: absolute;
+      background-color: white;
+      width: 120px;
+      height: 120px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    section>div:nth-child(14){
+      border-radius: 100px;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      background-color: red;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+    .insideCircle{
+      border-radius: 100px;
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      background-color: white;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    .insideRectangle{
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background-color: red;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+  </style>
+
+</head>
+<body>
+<section>
+  <div style="background-color: red">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: green">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: orange">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: deeppink">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+</section>
+
+<!------------------------------------------------------------------------->
+
+<section>
+  <div style="background-color: red">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: green">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: orange">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+  <div style="background-color: deeppink">
+    <div class="insideCircle"></div>
+    <div class="insideRectangle"></div>
+  </div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+</section>
+</body>
+</html>
