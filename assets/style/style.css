@@ -1,20 +1,26 @@
-/* Set background color */
 body {
-    background-color: #10113C;
+    background-color: #3D2A58;
+    /*background: radial-gradient(#0066FF, #AD00FF);*/
 }
 
-/* Set text color */
+
 body, h2, h3, h4, p, li {
-    color: black;
+    color: #ffffff;
 }
 
-/* Style the header */
+
 header {
-    background-color: white;
+    background-color: #000000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: fade-in 2s ease-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 header h2 {
@@ -75,27 +81,106 @@ section p {
     line-height: 1.5;
 }
 
-/* Style the images */
+
 section img {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
 }
 
-/* Style the buttons */
 input[type="button"] {
-    background-color: white;
-    border: 2px solid black;
+    background-color: #10113C;
+    border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
+    color: #ffffff;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    animation: fade-in 1s ease-out;
 }
 
 input[type="button"]:hover {
-    background-color: black;
+    background-color: #000372;
     color: white;
+}
+
+
+.nav-button {
+    background-color: #10113C;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    animation: slide-in 1s ease-out;
+}
+
+.nav-button:hover {
+    background-color: black;
+    color: #10113C;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:active {
+    transform: translateY(2px);
+}
+
+@keyframes slide-in {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.nav-button {
+    background-color: #10113C;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #000372;
+    color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:active {
+    transform: translateY(2px);
+}
+.triangle-left {
+    width: 500px;
+    height: 500px;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #555;
+    border-bottom: 25px solid transparent;
+    background: radial-gradient(#0066FF, #AD00FF);
+}
+/*
+p#aboutme{
+    text-align: right;
+    alignment-baseline: ;
+}*/
+/*
+img#aboutimg{
+    position: absolute;
+
+    width: 192px;
+    height: 108px;
+    float: left;
+}*/
+p#aboutme{
+    border: none;
+    padding: 10px;
+    width: 1200px;
+    height: 400px;
+    //text-align: justify;
+    text-align: right;
 }
