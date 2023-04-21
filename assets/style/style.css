@@ -1,6 +1,161 @@
 body {
-    background-color: #3D2A58;
-    /*background: radial-gradient(#0066FF, #AD00FF);*/
+    position: relative;
+    background: radial-gradient(#9b0000, #000000);
+}
+body, h2, h3, h4, p, li {
+    color: #ffffff;
+}
+header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fade-in 2s ease-out;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+header>h2 {
+    position: sticky;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header>nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header>nav>li {
+    margin: 0 10px;
+}
+
+header>nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    background-color: #10113C;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    animation: fade-in 1s ease-out;
+}
+input[type="button"]:hover {
+    background-color: #000372;
+    color: white;
+}
+
+
+.nav-button {
+    background-color: #10113C;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    animation: slide-in 1s ease-out;
+}
+
+.nav-button:hover {
+    background-color: black;
+    color: #10113C;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:active {
+    transform: translateY(2px);
+}
+
+@keyframes slide-in {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.nav-button {
+    background-color: #10113C;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #000372;
+    color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-button:active {
+    transform: translateY(2px);
+}
+.triangle-left {
+    width: 500px;
+    height: 500px;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #555;
+    border-bottom: 25px solid transparent;
+    background: radial-gradient(#0066FF, #AD00FF);
+}
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+#photo{
+    position: relative;
+    top: 150px;
+    left: 250px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid blue;
+}
+#about{
+    text-decoration: none;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 800px;
+    height: 200px;
+    padding-bottom: 150px;
+}
+#skill{
+    position: relative;
+    text-decoration: none;
+    top: 200px;
+
+}
+
+
+
+
+
+/*body {
+
+    !* background-color: #3D2A58; *!
+    background: radial-gradient(#9b0000, #000000);
 }
 
 
@@ -10,6 +165,7 @@ body, h2, h3, h4, p, li {
 
 
 header {
+    position: sticky;
     background-color: #000000;
     padding: 20px;
     display: flex;
@@ -50,10 +206,11 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Style the sections */
+!* Style the sections *!
 section {
     padding: 20px;
     margin-bottom: 30px;
+
 }
 
 section h2 {
@@ -162,7 +319,9 @@ input[type="button"]:hover {
     border-right: 50px solid #555;
     border-bottom: 25px solid transparent;
     background: radial-gradient(#0066FF, #AD00FF);
-}
+}*/
+
+
 /*
 p#aboutme{
     text-align: right;
@@ -176,11 +335,3 @@ img#aboutimg{
     height: 108px;
     float: left;
 }*/
-p#aboutme{
-    border: none;
-    padding: 10px;
-    width: 1200px;
-    height: 400px;
-    //text-align: justify;
-    text-align: right;
-}
