@@ -74,6 +74,7 @@ input[type="button"]:hover {
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
     animation: slide-in 1s ease-out;
+    margin-right: 5px;
 }
 
 .nav-button:hover {
@@ -122,7 +123,6 @@ input[type="button"]:hover {
 section {
     padding: 20px;
     margin-bottom: 30px;
-
 }
 #photo{
     position: relative;
@@ -146,6 +146,20 @@ section {
     text-decoration: none;
     top: 200px;
 
+}
+#projects{
+    position: relative;
+    top: 100px;
+}
+#eventmanagement{
+    position: relative;
+}
+#pharmacymanagement{
+    position: absolute;
+    height: 650px;
+    width: 700px;
+    right: 0;
+    top: 0;
 }
 
 
