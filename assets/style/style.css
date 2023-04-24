@@ -130,7 +130,7 @@ section {
     left: 250px;
     width: 300px;
     height: 300px;
-    border: 1px solid blue;
+    border: 3px solid blue;
 }
 #about{
     text-decoration: none;
@@ -160,9 +160,30 @@ section {
     width: 700px;
     right: 0;
     top: 20px;
+    padding-top: 42px;
 }
+section>ul>a{
+    padding-right: 420px;
+}
+#aaa{
+    padding-right: 0px;
+}
+/*#footer{
+    position: static;
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    border: 8px solid black;
+}
+#footer2{
+    position: relative;
 
-
+    left: 500px;
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    border: 8px solid black;
+}*/
 
 
 
