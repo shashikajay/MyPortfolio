@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            display: flex;
+            border: solid red 2px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div{
+            border: solid black 1px;
+            height: 30%;
+            width: 100%;
+            background-color: darkblue;
+            flex-shrink: 1;
+            text-align: center;
+
+        }
+        section>div:nth-child(1){
+            /*flex-grow: 1;*/
+            background-color: red;
+        }
+        section>div:nth-child(2){
+           /* flex-grow: 3    ;*/
+            background-color: green;
+
+        }
+        section>div:nth-child(3){
+           /* flex-grow: 1;*/
+            background-color: purple;
+        }
+        section>div:nth-child(4){
+            /* flex-grow: 1;*/
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</section>
+
+</body>
+</html>
