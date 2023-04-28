@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <style>
+    section{
+      position: relative;
+      top: 30px;
+      left: 30px;
+      height: 900px;
+      width: 1200px;
+      display: grid;
+      border: solid red 1px;
+      grid-template-rows: repeat(3,10fr);
+      grid-template-columns: repeat(4,1fr);
+    }
+
+    section>div{
+      border: solid green 1px;
+
+    }
+    section>div:nth-child(1){
+      background: red;
+      width: 600px;
+      height: 300px;
+      grid-column: 1/3;
+      border: solid black 1px;
+
+    }
+    section>div:nth-child(2){
+      background: blue;
+      border: solid black 1px;
+      width: 300px;
+      height: 303px;
+    }
+    section>div:nth-child(3){
+      background: orange;
+      grid-column: 4/5 ;
+      grid-row: 1/4;
+      border: solid black 1px;
+      width: 300px;
+      height: 900px;
+    }
+    section>div:nth-child(4){
+      background: indigo;
+      border: solid black 1px;
+      width: 300px;
+      height: 300px;
+    }
+    section>div:nth-child(5){
+      background: green;
+      border: solid black 1px;
+      width: 300px;
+      height: 300px;
+    }
+    section>div:nth-child(6){
+      background: white;
+      border: solid black 1px;
+      width: 300px;
+      height: 300px;
+    }
+
+    section>div:nth-child(7){
+      background: purple;
+      border: solid black 1px;
+      width: 300px;
+      height: 300px;
+    }
+    section>div:nth-child(8){
+      background: darkblue;
+      grid-column: 2/4;
+      border: solid black 1px;
+      width: 600px;
+      height: 300px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<section>
+  <div><img src="assets/image/pcwp.webp" width="600px" height="303px"></div>
+  <div><img src="assets/image/carti.jpg" width="300px" height="303px"></div>
+  <div><img src="assets/image/mobilewp.jpg" width="300px" height="909px"></div>
+  <div><img src="assets/image/kanye.jpg" width="300px" height="303px"></div>
+  <div><img src="assets/image/trol.png" width="300px" height="303px"></div>
+  <div><img src="assets/image/trol3.jpg" width="300px" height="303px"></div>
+  <div><img src="assets/image/shrek.jpg" width="300px" height="303px"></div>
+  <div><img src="assets/image/pcwp.webp" width="600px" height="303px"></div>
+</section>
+
+</body>
+</html>
