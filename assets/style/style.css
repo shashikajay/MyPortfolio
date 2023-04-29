@@ -151,7 +151,6 @@ section {
     padding-bottom: 150px;
 }
 #skill{
-    text-decoration: none;
     top: 10%;
     position: relative;
 
@@ -202,6 +201,9 @@ section>ul>a{
 }
 #skill>section{
     height: 30vh;
+}
+#languagessection{
+    position: relative;
 }
 
 
