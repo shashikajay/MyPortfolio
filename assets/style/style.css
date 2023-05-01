@@ -178,17 +178,54 @@ section>ul>a{
 }
 #specialization{
     width: 70vw;
-    height: 40vh;
+    height: 60vh;
     background-color: #06074a;
     left: 15%;
     right: 0;
-    position: absolute;
+    position: relative;
     border-radius: 40px;
 
 }
+#specialization>div{
+    top: 20%;
+    width: 20vw;
+    height: 30vh;
+}
+#specialization>div>h4{
+    top: 20%;
+    position: absolute;
+}
+#specialization>div>img{
+    right: 20%;
+    position: absolute;
+}
+
+#specialization>div:nth-child(1){
+position: absolute;
+}
+#specialization>div:nth-child(2){
+    position: absolute;
+    left: 40%;
+}
+#specialization>div:nth-child(3){
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+#languagessection{
+    position: relative;
+    height: 20vh;
+}
 #languages{
     position: absolute;
-    top: 100%;
     width: 50vw;
     height: 20vh;
     background-color: #06074a;
@@ -199,12 +236,11 @@ section>ul>a{
 #contact{
     position: relative;
 }
-#skill>section{
-    height: 30vh;
+#skill>section:nth-child(1){
+    height: 60vh;
 }
-#languagessection{
-    position: relative;
-}
+
+
 
 
 
