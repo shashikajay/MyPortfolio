@@ -134,6 +134,49 @@ section {
     padding: 20px;
     margin-bottom: 30px;
 }
+#intro{
+    position: relative;
+}
+#intro>div:nth-child(1){
+    height: 45vh;
+    width: 60vw;
+}
+#intro>div>h1{
+    position: absolute;
+    font-size: 60px;
+
+    font-family: 'Abril Fatface', cursive;
+}
+#intro>div{
+    position: relative;
+    left: 20%;
+}
+#intro>div>h2:nth-child(1){
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+#intro>div>h3:nth-child(2){
+     position: absolute;
+     top: 13%;
+ }
+#intro>div>h1:nth-child(3){
+    position: absolute;
+    top: 12%;
+}
+#intro>div>h1:nth-child(4){
+    left: 13%;
+    top: 23%;
+}
+
+
+
+
+
+
+
+
 #aboutmain{
     width: 100%;
     height: 40%;
