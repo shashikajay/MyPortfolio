@@ -198,7 +198,7 @@ section>ul>a{
     left: 15%;
     right: 0;
     position: relative;
-    border-radius: 40px;
+    border-radius: 3vw;
 }
 #specialization>div{
     top: 20%;
@@ -245,7 +245,7 @@ position: absolute;
     right: 0;
     top: 19%;
     position: absolute;
-    border-radius: 40px;
+    border-radius: 3vw;
 
 }
 
@@ -298,11 +298,20 @@ position: absolute;
     right: 23%;
 }
 #languagessection>div>img:nth-child(6){
-     width: 10vw;
-     height: 10vh;
+    width: 10vw;
+    height: 10vh;
     position: absolute;
     right: 4%;
  }
+#shadowlang{
+    position: absolute;
+    width: 50vw;
+    border-radius: 3vw;
+    height: 15vh;
+    top: 14%;
+    left: 2%;
+    background-color: #08091e;
+}
 
 
 #projects{
