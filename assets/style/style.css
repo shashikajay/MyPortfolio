@@ -2,9 +2,18 @@ body {
     position: relative;
     /*background: radial-gradient(#10113C, #000000);*/
     background-color: #10113b;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 body, h2, h3, h4, p, li {
     color: #ffffff;
+
+}
+section{
+    user-select: none;
 }
 header {
 
@@ -135,40 +144,89 @@ section {
     margin-bottom: 30px;
 }
 #intro{
+    width: 95%;
+    height: 90%;
     position: relative;
 }
 #intro>div:nth-child(1){
+    position: absolute;
     height: 45vh;
-    width: 60vw;
+    width: 40vw;
+    top: 20%;
 }
 #intro>div>h1{
     position: absolute;
-    font-size: 60px;
+    font-size: 4vw;
 
     font-family: 'Abril Fatface', cursive;
 }
 #intro>div{
     position: relative;
     left: 20%;
+
 }
 #intro>div>h2:nth-child(1){
-    position: absolute;
-    top: 0;
-    font-size: 40px;
+    position: relative;
+    top: -10%;
+    font-size: 3vw;
     font-weight: 900;
 }
 #intro>div>h3:nth-child(2){
-     position: absolute;
-     top: 13%;
+    position: absolute;
+    left: 1%;
+    font-size: 1vw;
+     top: 9%;
  }
 #intro>div>h1:nth-child(3){
     position: absolute;
-    top: 12%;
+    top: 6%;
 }
 #intro>div>h1:nth-child(4){
     left: 13%;
     top: 23%;
 }
+#intro>div:nth-child(2){
+    border: solid white;
+    width: 60vw;
+    position: relative;
+    top: 50%;
+    left: 19%;
+}
+#intro>div:nth-child(3){
+    position: relative;
+    width: 60.5vw;
+    height: 40vh;
+    top: 50%;
+    left: 19%;
+}
+#intro>div:nth-child(3){
+    display: flex;
+}
+#intro>div:nth-child(3)>div:nth-child(1){
+    padding-left: 0;
+    padding-right: 0.5vw;
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+}
+#intro>div:nth-child(3)>div:nth-child(2){
+    padding-right: 0.5vw;
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+}
+#intro>div:nth-child(3)>div:nth-child(3){
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+}
+
+
+
+
+
+
+
 
 
 
@@ -178,11 +236,13 @@ section {
 
 
 #aboutmain{
+    user-select: none;
     width: 100%;
     height: 40%;
     position: relative;
 }
 #photo{
+
     position: relative;
     top: 10%;
     left: 15%;
@@ -200,9 +260,13 @@ section {
     padding-bottom: 150px;
 }
 #skill{
+    user-select: none;
     top: 10%;
     position: relative;
 
+}
+#skill>section:nth-child(1){
+    height: 65vh;
 }
 #skill>h2{
     height: 3vh;
@@ -214,6 +278,7 @@ section {
     left: 16%;
 }
 #projects{
+    user-select: none;
     position: relative;
     top: 100px;
 }
@@ -234,7 +299,9 @@ section>ul>a{
 #aaa{
     padding-right: 0px;
 }
+
 #specialization{
+    border: solid white;
     width: 70vw;
     height: 47vh;
     background-color: #06074a;
@@ -260,7 +327,11 @@ section>ul>a{
     left: 22%;
 }
 #specialization>div>img{
-    right: 35%;
+    right: 45%;
+    position: absolute;
+}
+#specialization>div:nth-child(2)>img{
+    right: 43%;
     position: absolute;
 }
 #specialization>div>p{
@@ -281,12 +352,12 @@ position: absolute;
     right: 4%;
 }
 #shadowspec{
-    width: 69.8vw;
-    height: 48vh;
+    width: 70vw;
+    height: 46vh;
     background-color: #08091e;
-    left: 18%;
+    left: 19%;
     right: 0;
-    top: 19%;
+    top: 22%;
     position: absolute;
     border-radius: 3vw;
 
@@ -300,6 +371,7 @@ position: absolute;
     height: 20vh;
 }
 #languages{
+    border: solid white;
     position: absolute;
     width: 50vw;
     border-radius: 3vw;
@@ -350,7 +422,7 @@ position: absolute;
     position: absolute;
     width: 50vw;
     border-radius: 3vw;
-    height: 15vh;
+    height: 16vh;
     top: 14%;
     left: 2%;
     background-color: #08091e;
@@ -362,9 +434,6 @@ position: absolute;
 }
 #contact{
     position: relative;
-}
-#skill>section:nth-child(1){
-    height: 60vh;
 }
 
 
