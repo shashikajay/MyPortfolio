@@ -185,13 +185,22 @@ section {
     left: 13%;
     top: 23%;
 }
-#intro>div:nth-child(2){
+div.underline{
     border: solid white;
-    width: 60vw;
+    width: 0vw;
     position: relative;
     top: 50%;
     left: 19%;
     border-radius: 10vw;
+    animation: expand 2.3s forwards;
+}
+@keyframes expand {
+    from{
+        width: 0;
+    }to{
+        width: 60vw;
+         }
+
 }
 #intro>div:nth-child(3){
     position: relative;
@@ -258,6 +267,7 @@ section {
 }
 .section-intro {
     position: relative;
+    transition: 0.5s;
     left: 50%;
     transform: translateX(-50%);
     width: 43vw;
@@ -270,11 +280,19 @@ section {
     text-align: center;
 }
 .section-intro>p{
+    opacity: 40%;
+    transition: 0.5s;
     position: absolute;
     width: 33vw;
     right: 0;
-
 }
+.section-intro>p:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+
 
 
 
