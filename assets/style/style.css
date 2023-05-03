@@ -148,13 +148,13 @@ section {
 }
 #intro>div:nth-child(1){
     position: absolute;
-    height: 45vh;
+    height: 31vh;
     width: 40vw;
     top: 20%;
 }
 #intro>div>h1{
     position: absolute;
-    font-size: 4vw;
+    font-size: 4rem;
     font-family: 'Abril Fatface', cursive;
 }
 #intro>div{
@@ -164,24 +164,28 @@ section {
 
 }
 #intro>div>h2:nth-child(1){
-    position: relative;
-    top: -10%;
-    font-size: 3vw;
+    position: absolute;
+    top: 4%;
+    font-size: 3rem;
     font-weight: 900;
 }
 #intro>div>h3:nth-child(2){
     position: absolute;
     left: 1%;
-    font-size: 1vw;
-     top: 9%;
+    top: 30%;
+    font-size: 1rem;
+
  }
 #intro>div>h1:nth-child(3){
     position: absolute;
-    top: 6%;
+    bottom: 19%;
+    font-size: 4rem;
 }
 #intro>div>h1:nth-child(4){
     left: 13%;
-    top: 23%;
+    bottom: 2%;
+    position: absolute;
+    font-size: 4rem;
 }
 div.underline{
     border: solid white;
