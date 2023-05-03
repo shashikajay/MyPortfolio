@@ -110,7 +110,6 @@ input[type="button"]:hover {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
-
 .nav-button {
     background-color: #08091e;
     color: white;
@@ -129,7 +128,7 @@ input[type="button"]:hover {
 }
 
 .nav-button:active {
-    transform: translateY(2px);
+    transform: translateY(15px);
 }
 .triangle-left {
     width: 500px;
@@ -156,7 +155,6 @@ section {
 #intro>div>h1{
     position: absolute;
     font-size: 4vw;
-
     font-family: 'Abril Fatface', cursive;
 }
 #intro>div{
@@ -187,7 +185,7 @@ section {
 }
 div.underline{
     border: solid white;
-    width: 0vw;
+    width: 0;
     position: relative;
     top: 50%;
     left: 19%;
@@ -200,7 +198,6 @@ div.underline{
     }to{
         width: 60vw;
          }
-
 }
 #intro>div:nth-child(3){
     position: relative;
@@ -238,7 +235,6 @@ div.underline{
     text-align: center;
 
 }
-
 #introabout>div:nth-child(2)>h1{
     text-align: center;
     font-size: 1.5vw;
@@ -260,7 +256,6 @@ div.underline{
 #introabout>div:hover{
     opacity: 100%;
     cursor: pointer;
-
 }
 #about{
     height: 100vh;
@@ -289,6 +284,18 @@ div.underline{
 .section-intro>p:hover{
     cursor: pointer;
     opacity: 100%;
+}
+.profileTab{
+    position: absolute;
+    width: 28vw;
+    height: 60vh;
+    left: 20%;
+}
+.skillTab{
+    position: absolute;
+    width: 28vw;
+    height: 60vh;
+    right: 20%;
 }
 
 
