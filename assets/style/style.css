@@ -205,22 +205,57 @@ section {
 }
 #intro>div:nth-child(3)>div:nth-child(1){
     padding-left: 0;
-    padding-right: 0.5vw;
+    padding-right: 1vw;
     position: relative;
     width: 20vw;
-    height: 40vh;
+    height: 15.2vh;
 }
 #intro>div:nth-child(3)>div:nth-child(2){
-    padding-right: 0.5vw;
+    padding-right: 1vw;
     position: relative;
     width: 20vw;
-    height: 40vh;
+    height: 18.8vh;
 }
 #intro>div:nth-child(3)>div:nth-child(3){
     position: relative;
     width: 20vw;
-    height: 40vh;
+    height: 15.2vh;
 }
+#introabout>div:nth-child(1)>h1{
+    text-align: center;
+    font-size: 1.5vw;
+}
+#introabout>div:nth-child(1)>p{
+    text-align: center;
+
+}
+
+#introabout>div:nth-child(2)>h1{
+    text-align: center;
+    font-size: 1.5vw;
+}
+#introabout>div:nth-child(2)>p{
+    text-align: center;
+}
+#introabout>div:nth-child(3)>h1{
+    text-align: center;
+    font-size: 1.5vw;
+}
+#introabout>div:nth-child(3)>p{
+    text-align: center;
+}
+#introabout>div{
+    opacity: 20%;
+    transition: 0.5s;
+}
+#introabout>div:hover{
+    opacity: 100%;
+    cursor: pointer;
+
+}
+
+
+
 
 
 
