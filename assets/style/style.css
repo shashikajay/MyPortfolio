@@ -160,6 +160,7 @@ section {
     font-family: 'Abril Fatface', cursive;
 }
 #intro>div{
+    transition: 0.5s;
     position: relative;
     left: 20%;
 
@@ -252,48 +253,37 @@ section {
     cursor: pointer;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#aboutmain{
-    user-select: none;
-    height: 100vh;
-    position: relative;
-}
-
-#photo{
-
-    position: relative;
-    top: 10%;
-    left: 15%;
-    width: 17vw;
-    height: 34vh;
-    border: 3px solid blue;
-}
 #about{
-    text-decoration: none;
-    position: absolute;
-    top: 5%;
-    right: 7%;
-    width: 45vw;
-    height: 40vh;
-    padding-bottom: 150px;
+    height: 100vh;
 }
+.section-intro {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43vw;
+    height: 35vh;
+}
+.section-intro>h5:nth-child(1){
+    text-align: center;
+}
+.section-intro>h1:nth-child(2){
+    text-align: center;
+}
+.section-intro>p{
+    position: absolute;
+    width: 33vw;
+    right: 0;
+
+}
+
+
+
+
+
+
+
+
+
 #skill{
     user-select: none;
     height: 100vh;
