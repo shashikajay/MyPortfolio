@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    div.circle{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: red;
+      animation: circle 3s infinite;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: 1;
+
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes circle {
+      0%,100%{
+        left: 0;
+        top: 0;
+      }
+      25%{
+        background-color: yellow;
+        left: 120px;
+        top: 0;
+        animation-duration: 1s;
+      }
+      50%{
+        background-color: green;
+        left: 120px;
+        top: 120px;
+        animation-duration: 1s;
+      }
+      75%{
+        background-color: green;
+        left: 0;
+        top: 120px;
+        animation-duration: 1s;
+      }
+
+
+    }
+    div.circle:hover{
+      animation-play-state: paused;
+    }
+
+  </style>
+</head>
+<body>
+
+
+
+<div>
+</div>
+
+<div class="circle">
+</div>
+</body>
+</html>
