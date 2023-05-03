@@ -140,12 +140,11 @@ input[type="button"]:hover {
     background: radial-gradient(#0066FF, #AD00FF);
 }
 section {
-    padding: 20px;
+    padding-left: 20px;
     margin-bottom: 30px;
 }
 #intro{
-    width: 95%;
-    height: 90%;
+    height: 90vh;
     position: relative;
 }
 #intro>div:nth-child(1){
@@ -273,13 +272,10 @@ section {
 
 #aboutmain{
     user-select: none;
-    width: 100%;
-    height: 40%;
+    height: 100vh;
     position: relative;
 }
-#aboutme{
-    text-align: center;
-}
+
 #photo{
 
     position: relative;
@@ -300,7 +296,7 @@ section {
 }
 #skill{
     user-select: none;
-    top: 10%;
+    height: 100vh;
     position: relative;
 
 }
@@ -317,9 +313,9 @@ section {
     left: 16%;
 }
 #projects{
+    height: 100vh;
     user-select: none;
     position: relative;
-    top: 100px;
 }
 #eventmanagement{
     position: relative;
@@ -334,9 +330,6 @@ section {
 }
 section>ul>a{
     padding-right: 420px;
-}
-#aaa{
-    padding-right: 0px;
 }
 
 #specialization{
@@ -472,6 +465,7 @@ position: absolute;
     position: relative;
 }
 #contact{
+    height: 100vh;
     position: relative;
 }
 
