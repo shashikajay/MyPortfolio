@@ -557,6 +557,41 @@ div.underline{
     transition: 0.5s;
     cursor: pointer;
 }
+.hire-me {
+    position: absolute;
+    left: 48%;
+    transform: translateY(-50%);
+
+    background-color: #08091e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: infinite-pulse 2s ease-in-out infinite;
+}
+
+@keyframes infinite-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.hire-me:hover{
+    background-color: #000372;
+}
+
+
+
+
+
+
 .languages{
     position: absolute;
     height: 20vh;
