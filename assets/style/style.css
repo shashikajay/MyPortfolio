@@ -147,8 +147,8 @@ section {
     position: relative;
 }
 #intro>div:nth-child(1){
-    position: absolute;
-    height: 31vh;
+    position: relative;
+    height: 27vh;
     width: 40vw;
     top: 20%;
 }
@@ -163,35 +163,63 @@ section {
     left: 20%;
 
 }
-#intro>div>h2:nth-child(1){
+#intro>div>span:nth-child(1){
+    width: 10vw;
+    top: 24%;
     position: absolute;
-    top: 4%;
+}
+#intro>div>span:nth-child(1)>h2{
+    width: 7vw;
+    position: absolute;
+    margin: 0;
     font-size: 3rem;
     font-weight: 900;
 }
-#intro>div>h3:nth-child(2){
-    position: absolute;
-    left: 1%;
-    top: 30%;
-    font-size: 1rem;
-
- }
-#intro>div>h1:nth-child(3){
-    position: absolute;
-    bottom: 19%;
-    font-size: 4rem;
+#intro>div>span:nth-child(2){
+    width: 10vw;
+    position: relative;
+    top: 44%;
 }
-#intro>div>h1:nth-child(4){
+#intro>div>span:nth-child(2)>h3{
+    width: 5vw;
+    position: absolute;
+    margin: 0;
+    font-size: 1rem;
+}
+#intro>div>span:nth-child(3){
+    width: 1vw;
+    position: absolute;
+    bottom: 24%;
+    margin: 1px;
+
+}
+#intro>div>span:nth-child(3)>h1{
+    width: 15vw;
+    margin: 0;
+    position: relative;
+    font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
+}
+#intro>div>span:nth-child(4){
     left: 13%;
-    bottom: 2%;
+    height: 10vh;
+    bottom: 4%;
+    position: absolute;
+}
+#intro>div>span:nth-child(4)>h1{
+    width: 20vw;
+    margin: 0;
+    bottom: 0;
     position: absolute;
     font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
 }
 div.underline{
     border: solid white;
     width: 0;
     position: relative;
-    top: 50%;
+    top: 20%;
+    margin: 1px;
     left: 19%;
     border-radius: 10vw;
     animation: expand 2.3s forwards;
@@ -207,7 +235,7 @@ div.underline{
     position: relative;
     width: 60.5vw;
     height: 40vh;
-    top: 50%;
+    top: 20%;
     left: 19%;
 }
 #intro>div:nth-child(3){
@@ -289,18 +317,62 @@ div.underline{
     cursor: pointer;
     opacity: 100%;
 }
+.profile\&skill{
+    height: 61vh;
+}
 .profileTab{
     position: absolute;
+    margin: 0;
     width: 28vw;
     height: 60vh;
     left: 20%;
 }
-.skillTab{
+.myskill{
     position: absolute;
+    margin: 0;
     width: 28vw;
     height: 60vh;
     right: 20%;
 }
+.profileTab>h2:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+}
+.profileTab>p{
+    opacity: 75%;
+}
+.profileTab>h2:not(:first-of-type){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1%;
+}
+.profileTab>p:not(:first-of-type){
+    margin-top: 1%;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+.profileTab>p:not(:first-of-type):hover{
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.profileTab>p:nth-child(4){
+    width: 8vw;
+}
+.profileTab>p:nth-child(6){
+    width: 6vw;
+}
+.profileTab>p:nth-child(8){
+    width: 4vw;
+}
+.profileTab>p:nth-child(10){
+    width: 7vw;
+}
+.profileTab>p:nth-child(12){
+    width: 13.5vw;
+}
+
+
 
 
 
