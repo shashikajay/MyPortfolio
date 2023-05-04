@@ -557,6 +557,34 @@ div.underline{
     transition: 0.5s;
     cursor: pointer;
 }
+.languages{
+    position: absolute;
+    height: 20vh;
+    bottom: 0;
+    width: 101%;
+    left: -1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.languadeborder{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 70vw;
+    height: 10vh;
+}
+.languadeborder>i{
+    font-size: 6.5rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.languadeborder>i:nth-child(1){
+    padding-left: 10vw;
+}
+.languadeborder>i:not(:first-of-type){
+    border-left: 2px solid rgba(255, 255, 255, 0.6);
+}
 
 
 
