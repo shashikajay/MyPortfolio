@@ -152,7 +152,17 @@ section {
     height: 27vh;
     width: 40vw;
     top: 20%;
+    animation: slide-reverse 2.3s;
 }
+@keyframes slide-reverse {
+    from{
+        top: 100%;
+    }
+        to{
+            top: 20%;
+        }
+}
+
 #intro>div>h1{
     position: absolute;
     font-size: 4rem;
@@ -238,7 +248,19 @@ div.underline{
     height: 40vh;
     top: 20%;
     left: 19%;
+    animation: slidein 2.3s forwards;
 }
+@keyframes slidein {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 19%;
+    }
+}
+
+
+
 #intro>div:nth-child(3){
     display: flex;
 }
@@ -260,6 +282,7 @@ div.underline{
     width: 20vw;
     height: 15.2vh;
 }
+
 #introabout>div:nth-child(1)>h1{
     text-align: center;
     font-size: 1.5vw;
