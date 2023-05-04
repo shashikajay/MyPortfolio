@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 body {
     position: relative;
     /*background: radial-gradient(#10113C, #000000);*/
@@ -302,6 +303,11 @@ div.underline{
 }
 .section-intro>h5:nth-child(1){
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+
 }
 .section-intro>h1:nth-child(2){
     text-align: center;
@@ -371,7 +377,88 @@ div.underline{
 .profileTab>p:nth-child(12){
     width: 13.5vw;
 }
+.myskill>h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+}
+.myskill>p{
+    opacity: 75%;
+}
+.skill-bars {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.skill-bars li {
+    margin: 0 0 25px 0;
+    padding: 0;
+    position: relative;
+}
+
+.skill-bars li strong {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bars li .progress {
+    margin-bottom: 1%;
+    height: 2%;
+    width: 100%;
+    border-radius: 100vw;
+    background: #f2f2f2;
+    margin-top: 5px;
+    position: relative;
+}
+
+.skill-bars li .progress span {
+    display: block;
+    height: 100%;
+    border-radius: 100vw;
+    font-size: 0.8rem;
+    left: -1%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.skill-bars li .progress.percent80 span {
+    width: 80%;
+    background: #000;
+}
+
+.skill-bars li .progress.percent90 span {
+    width: 90%;
+    background: #000;
+}
+
+.skill-bars li .progress.percent85 span {
+    width: 85%;
+    background: #000;
+}
+
+.skill-bars li .progress.percent83 span {
+    width: 83%;
+    background: #000;
+}
+
+.skill-bars li .progress.percent75 span {
+    width: 75%;
+    background: #000;
+}
+
+.skill-bars li .progress span:after {
+    content: attr(data-content);
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
 
 
 
