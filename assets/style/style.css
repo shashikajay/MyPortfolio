@@ -377,6 +377,7 @@ div.underline{
 .profileTab>p:nth-child(12){
     width: 13.5vw;
 }
+
 .myskill>h2{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5%;
@@ -384,6 +385,9 @@ div.underline{
 .myskill>p{
     opacity: 75%;
 }
+
+
+
 .skill-bars {
     list-style: none;
     margin: 0;
@@ -391,15 +395,14 @@ div.underline{
 }
 
 .skill-bars li {
-    margin: 0 0 25px 0;
+    margin-bottom: 6.3%;
     padding: 0;
     position: relative;
 }
 
 .skill-bars li strong {
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     display: block;
     margin-bottom: 5px;
 }
@@ -461,34 +464,99 @@ div.underline{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-#skill{
+#services{
     user-select: none;
     height: 100vh;
     position: relative;
 
 }
-#skill>section:nth-child(1){
-    height: 65vh;
-}
-#skill>h2{
-    height: 3vh;
-}
-#skill>section>h3{
+.col-twelve{
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
-    width: 8vw;
-    height: 3vh;
-    left: 16%;
+    height: 22vh;
+    width: 35vw;
+    transition: 0.5s;
+}
+.col-twelve>h5:nth-child(1){
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: auto;
+}
+.col-twelve>h1:nth-child(2){
+    margin-top: 2%;
+    text-align: center;
+}
+.col-twelve>p{
+    opacity: 50%;
+    transition: 0.5s;
+    text-align: center;
+}
+.col-twelve>p:hover{
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.service{
+    height: 40vh;
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+.service>div {
+    width: 20vw;
+    height: 40vh;
+    position: relative;
+    padding-right: 1vw;
+
+}
+.service>div>img{
+    left: 38%;
+    position: relative;
+    width: 6vw;
+    height: 10vh;
+}
+.service>div>h3{
+    text-align: center;
+}
+.service>div>p{
+    text-align: center;
+    opacity: 50%;
+    transition: 0.5s;
+}
+.service>div>p:hover{
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*
+#skill>h2{
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     letter-spacing: 0.4rem;
+     font-size: 1.2rem;
+     font-weight: 900;
+ }
+#skill>section>h3{
+    margin-top: 4.5%;
+    text-align: center;
+}
+*/
+/*#skill>section:nth-child(1){
+    height: 65vh;
 }
 #projects{
     height: 100vh;
@@ -636,7 +704,7 @@ position: absolute;
     top: 14%;
     left: 2%;
     background-color: #08091e;
-}
+}*/
 
 
 #projects{
