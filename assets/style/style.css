@@ -16,7 +16,74 @@ body, h2, h3, h4, p, li {
 section{
     user-select: none;
 }
-header {
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(65, 65, 65, 0.7), rgba(32, 59, 54, 0.7));
+    z-index: 999;
+    padding: 1.2vw;
+}
+#header:hover{
+    transition: 0.3s;
+    padding: 2vw;
+}
+#header:not(:hover){
+    padding: 1.2vw;
+    transition: 0.3s;
+}
+.nav-button {
+    background: transparent;
+    color: #fff;
+    border: 0.4vw solid #fff;
+    border-radius: 4vw;
+    padding: 0.5vw 1vw;
+    margin-right: 4vw;
+    font-size: 1vw;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #fff;
+    color: #917FB3;
+    border: 0.3vw solid #917FB3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.headerbutton {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerbutton>li>a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.headerbutton>li>a:hover {
+    color: #917FB3;
+}
+
+h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+/*header {
 
     position: fixed;
     z-index: 600;
@@ -62,9 +129,9 @@ header>nav>ul>li>a {
 
 header nav a:hover {
     text-decoration: underline;
-}
+}*/
 
-input[type="button"] {
+/*input[type="button"] {
     background-color: #00ADB5;
     border: none;
     padding: 10px 20px;
@@ -80,10 +147,10 @@ input[type="button"] {
 input[type="button"]:hover {
     background-color: #393E46;
     color: white;
-}
+}*/
 
 
-.nav-button {
+/*.nav-button {
     background-color: #00ADB5;
     color: white;
     font-size: 18px;
@@ -94,23 +161,23 @@ input[type="button"]:hover {
     transition: background-color 0.5s ease-in-out;
     animation: slide-in 1s ease-out;
     margin-right: 5px;
-}
+}*/
 
-.nav-button:hover {
+/*.nav-button:hover {
     background-color: black;
     color: #393E46;
     transition: background-color 0.5s ease-in-out;
-}
+}*/
 
-.nav-button:active {
+/*.nav-button:active {
     transform: translateY(2px);
 }
 
 @keyframes slide-in {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-}
-.nav-button {
+}*/
+/*.nav-button {
     background-color: #00ADB5;
     color: white;
     font-size: 18px;
@@ -119,27 +186,26 @@ input[type="button"]:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
-}
+}*/
 
-.nav-button:hover {
+/*.nav-button:hover {
     background-color: #393E46;
     color: #ffffff;
     transition: background-color 0.5s ease-in-out;
-}
+}*/
 
-.nav-button:active {
+/*.nav-button:active {
     transform: translateY(15px);
-}
-.triangle-left {
+}*/
+/*.triangle-left {
     width: 500px;
     height: 500px;
     border-top: 25px solid transparent;
     border-right: 50px solid #555;
     border-bottom: 25px solid transparent;
     background: radial-gradient(#0066FF, #AD00FF);
-}
+}*/
 section {
-    padding-left: 20px;
     margin-bottom: 30px;
 }
 .photo{
@@ -183,7 +249,7 @@ section {
     display: table;
     position: relative;
     text-align: center;
-    opacity: 0.3; !* Change the opacity value as needed *!
+    opacity: 0.3;
 }*/
 #intro>div:nth-child(1){
     position: relative;
@@ -350,43 +416,36 @@ div.underline{
 
 
 
-.social-media {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.social-media li {
-    margin-right: 20px;
+.social-media>li>a {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    display: inline-block;
     position: relative;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+
 }
 
-.social-media li a {
-    display: flex;
-    align-items: center;
-    color: #555;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+.social-media>li>a:hover {
+    transform: scale(1.1);
 }
 
-.social-media li a svg {
-    width: 24px;
-    height: 24px;
-    fill: #555;
-    transition: fill 0.2s ease-in-out;
+.social-media>li>a>i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
 }
-
-.social-media li a:hover {
-    color: #1da1f2;
-}
-
-.social-media li a:hover svg {
-    fill: #1da1f2;
+.social-media>li>a>i{
     animation: pulse 1s ease-in-out infinite;
 }
-
+.social-media>li{
+    list-style-type: none;
+}
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -398,6 +457,35 @@ div.underline{
         transform: scale(1);
     }
 }
+.twitter{
+    color: #1da1f2;
+}
+.instagram{
+    color: #E1306C;
+}
+.linkedin{
+    color: #0077B5;
+}
+.facebook{
+    color: #1877f2;
+}
+
+.social{
+    height: 9vh;
+    position: relative;
+    bottom: -10%;
+}
+.social-media{
+    position: relative;
+    bottom: -20%;
+}
+.social-media>li{
+    position: relative;
+    height: 9vh;
+    padding: 0;
+    text-align: center;
+}
+
 
 
 
