@@ -149,7 +149,7 @@ section {
     height: 100%;
     position: absolute;
 }
-/*#intro {
+#intro {
     position: relative;
     height: 100vh;
 }
@@ -169,9 +169,9 @@ section {
 }
 #intro>div>div{
     z-index: 1000;
-}*/
+}
 
-#intro {
+/*#intro {
     background: #151515 url(../image/intro.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -183,8 +183,8 @@ section {
     display: table;
     position: relative;
     text-align: center;
-    opacity: 0.3; /* Change the opacity value as needed */
-}
+    opacity: 0.3; !* Change the opacity value as needed *!
+}*/
 #intro>div:nth-child(1){
     position: relative;
     height: 21vh;
@@ -344,6 +344,72 @@ div.underline{
     opacity: 100%;
     cursor: pointer;
 }
+
+
+
+
+
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.social-media li a {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-media li a svg {
+    width: 24px;
+    height: 24px;
+    fill: #555;
+    transition: fill 0.2s ease-in-out;
+}
+
+.social-media li a:hover {
+    color: #1da1f2;
+}
+
+.social-media li a:hover svg {
+    fill: #1da1f2;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #about{
     height: 100vh;
 }
