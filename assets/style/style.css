@@ -51,7 +51,7 @@ section{
     background: #fff;
     color: #917FB3;
     border: 0.3vw solid #917FB3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.5);
 }
 .headerbutton {
     margin: 0;
@@ -71,12 +71,9 @@ section{
 .headerbutton>li>a:hover {
     color: #917FB3;
 }
-
-h2 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
+.headerbutton>li{
+    width: 5.6vw;
+    padding-right: 3vw;
 }
 
 
@@ -205,6 +202,7 @@ input[type="button"]:hover {
     border-bottom: 25px solid transparent;
     background: radial-gradient(#0066FF, #AD00FF);
 }*/
+
 section {
     margin-bottom: 30px;
 }
