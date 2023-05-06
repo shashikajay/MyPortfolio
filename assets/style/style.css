@@ -22,7 +22,7 @@ section{
     top: 0;
     left: 0;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(65, 65, 65, 0.1), rgba(32, 59, 54, 0.7));
+    background: rgb(0, 0, 0, 0.2);
     z-index: 999;
     padding: 1.2vw;
 }
@@ -32,6 +32,21 @@ section{
 }
 #header:not(:hover){
     padding: 1.2vw;
+    transition: 0.3s;
+}
+.quickSocial{
+    position: absolute;
+}
+.quickSocial>a>i{
+    font-size: 1vw;
+    color: white;
+    padding-right: 0.5vw;
+}
+.quickSocial>a>i:hover{
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+.quickSocial>a>i:not(:hover){
     transition: 0.3s;
 }
 .nav-button {
@@ -325,9 +340,9 @@ section {
 div.underline{
     border: solid white 0.3vh;
     position: relative;
-    top: 20%;
+    top: 21vh;
     margin: 1px;
-    left: 19%;
+    left: 19vw;
     border-radius: 1vh;
     animation: expand 2.3s forwards;
 }
