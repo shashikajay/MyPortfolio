@@ -22,7 +22,7 @@ section{
     top: 0;
     left: 0;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(65, 65, 65, 0.7), rgba(32, 59, 54, 0.7));
+    background: linear-gradient(90deg, rgba(65, 65, 65, 0.1), rgba(32, 59, 54, 0.7));
     z-index: 999;
     padding: 1.2vw;
 }
@@ -234,7 +234,7 @@ section {
     height: 100%;
 }
 #intro>div>div{
-    z-index: 1000;
+    z-index: 10;
 }
 
 /*#intro {
@@ -384,24 +384,20 @@ div.underline{
     font-size: 1.5vw;
     font-family: sans-serif;
 }
-#introabout>div:nth-child(1)>p{
+#introabout>div>p{
     text-align: center;
-
+    font-size: 0.9vw;
 }
 #introabout>div:nth-child(2)>h1{
     text-align: center;
     font-size: 1.5vw;
 }
-#introabout>div:nth-child(2)>p{
-    text-align: center;
-}
+
 #introabout>div:nth-child(3)>h1{
     text-align: center;
     font-size: 1.5vw;
 }
-#introabout>div:nth-child(3)>p{
-    text-align: center;
-}
+
 #introabout>div{
     opacity: 20%;
     transition: 0.5s;
@@ -421,10 +417,8 @@ div.underline{
     padding-left: 1vw;
     display: inline-block;
     position: relative;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    margin: 2.5vw;
+    color: white;
     transition: transform 0.3s ease-in-out;
 
 }
@@ -435,8 +429,6 @@ div.underline{
 
 .social-media>li>a>i {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5vw;
 }
@@ -457,17 +449,21 @@ div.underline{
         transform: scale(1);
     }
 }
-.twitter{
+.twitter:hover{
     color: #1da1f2;
+    transition: 0.3s;
 }
-.instagram{
+.instagram:hover{
     color: #E1306C;
+    transition: 0.3s;
 }
-.linkedin{
+.linkedin:hover{
     color: #0077B5;
+    transition: 0.3s;
 }
-.facebook{
+.facebook:hover{
     color: #1877f2;
+    transition: 0.3s;
 }
 
 .social{
@@ -477,7 +473,7 @@ div.underline{
 }
 .social-media{
     position: relative;
-    bottom: -20%;
+    bottom: -20vh;
 }
 .social-media>li{
     position: relative;
