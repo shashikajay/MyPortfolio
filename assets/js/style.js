@@ -1,12 +1,7 @@
-var header = document.getElementById("header");
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+function goToAbout() {
+    document.querySelector('.about').style.transform = 'translateX(0)';
+}
 
-window.onscroll = function() {
-    var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScrollTop > 0) {
-        header.classList.add("transparency");
-    } else {
-        header.classList.remove("transparency");
-    }
-    scrollTop = currentScrollTop;
-};
+function goToServices() {
+    document.querySelector('.services').style.transform = 'translateX(100vw)';
+}

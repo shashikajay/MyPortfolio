@@ -15,16 +15,17 @@
         <link rel="canonical" href="https://ijse.lk/">
         <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
         <link rel="stylesheet" href="assets/style/normalize.css">
+        <script src="assets/js/style.js"></script>
     </head>
 <body>
 <header id="header">
     <nav>
         <ul class="headerbutton">
 
-            <li><a href="#about"><button class="nav-button">About</button></a></li>
-            <li><a href="#skill"><button class="nav-button">Services</button></a></li>
-            <li><a href="#projects"><button class="nav-button">Projects</button></a></li>
-            <li><a href="#contact"><button class="nav-button">Contact</button></a></li>
+            <li><a href="#about"><button onclick="goToAbout" class="nav-button">About</button></a></li>
+            <li><a href="#services"><button onclick="goToServices" class="nav-button">Services</button></a></li>
+            <li><a href="#projects"><button onclick="goToProjects" class="nav-button">Projects</button></a></li>
+            <li><a href="#contact"><button onclick="goToContact" class="nav-button">Contact</button></a></li>
 
 
            <!-- <li><a href="#about">About</a></li>
@@ -35,7 +36,7 @@
         </ul>
     </nav>
 </header>
-<section id="intro">
+<section id="intro" class="intro">
     <div>
         <span><h2>Hello!</h2></span>
         <span><h3>My Name Is </h3></span>
@@ -82,7 +83,7 @@
 
 
 <!-- About section -->
-<section  id="about">
+<section  id="about" class="about">
     <div class="section-intro">
         <h5>ABOUT</h5>
         <h1>Let me introduce myself.</h1>
@@ -125,7 +126,7 @@
 </section>
 
 <!-- Skills section -->
-<section id="services">
+<section id="services" class="services">
     <div class="col-twelve">
             <h5>SERVICES</h5>
             <h1>WHAT CAN I DO FOR YOU?</h1>
@@ -169,7 +170,7 @@
 
 <!-- Projects section -->
 
-<section id="projects">
+<section id="projects" class="projects">
     <h2>Projects</h2>
     <ul>
         <li id="eventmanagement">
@@ -201,7 +202,7 @@
 
 <!-- Contact section -->
 
-<section id="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
     <p>If you want to get in touch with me, you can reach me at:</p>
     <ul>
