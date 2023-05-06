@@ -414,7 +414,7 @@ div.underline{
 }
 
 #introabout>div{
-    opacity: 20%;
+    opacity: 50%;
     transition: 0.5s;
 }
 #introabout>div:hover{
