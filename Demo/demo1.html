@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <link rel="stylesheet" href="/Demo/demo1.css">
+
+    <script>
+        const scrollDownBtn = document.getElementById("scroll-down-btn");
+
+        scrollDownBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+<button id="scroll-down-btn">Scroll Down</button>
+
+<div class="arrow-down"></div>
+
+</body>
+
+<section class="section1"></section>
+</html>

@@ -6,6 +6,15 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+p{
+    font-size: 0.9vw;
+}
+h1{
+    font-size: 1.5vw;
+}
+h2{
+   font-size: 1.2vw;
+}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -620,16 +629,18 @@ div.underline{
 .section-intro>h5:nth-child(1){
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.4rem;
-    font-size: 1.2rem;
+    letter-spacing: 0.4vw;
+    font-size: 1.2vw;
     font-weight: 900;
 
 }
 .section-intro>h1:nth-child(2){
     text-align: center;
+    font-size: 1.5vw;
 }
 .section-intro>p{
     opacity: 40%;
+    font-size: 0.9vw;
     transition: 0.5s;
     position: absolute;
     width: 33vw;
@@ -649,6 +660,9 @@ div.underline{
     height: 60vh;
     left: 20%;
 }
+.profileTab>h2:nth-child(1){
+    font-size: 1.2vw;
+}
 .myskill{
     position: absolute;
     margin: 0;
@@ -656,16 +670,20 @@ div.underline{
     height: 60vh;
     right: 20%;
 }
+.myskill>h2:nth-child(1){
+    font-size: 1.2vw;
+}
 .profileTab>h2:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5%;
 }
 .profileTab>p{
+    font-size: 0.9vw;
     opacity: 75%;
 }
 .profileTab>h2:not(:first-of-type){
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     margin-bottom: 1%;
 }
 .profileTab>p:not(:first-of-type){
@@ -679,19 +697,19 @@ div.underline{
     cursor: pointer;
 }
 .profileTab>p:nth-child(4){
-    width: 8vw;
+    width: 8.5vw;
 }
 .profileTab>p:nth-child(6){
-    width: 6vw;
+    width: 6.5vw;
 }
 .profileTab>p:nth-child(8){
     width: 4vw;
 }
 .profileTab>p:nth-child(10){
-    width: 7vw;
+    width: 7.5vw;
 }
 .profileTab>p:nth-child(12){
-    width: 13.5vw;
+    width: 14.5vw;
 }
 
 .myskill>h2{
@@ -718,7 +736,7 @@ div.underline{
 
 .skill-bars li strong {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     display: block;
     margin-bottom: 5px;
 }
@@ -774,7 +792,7 @@ div.underline{
     position: absolute;
     right: 0;
     top: -25px;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: bold;
     color: #171717;
 }
@@ -798,12 +816,13 @@ div.underline{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.4rem;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: 900;
     margin: auto;
 }
 .col-twelve>h1:nth-child(2){
     margin-top: 2%;
+    font-size: 1.5vw;
     text-align: center;
 }
 .col-twelve>p{
@@ -839,6 +858,7 @@ div.underline{
 }
 .service>div>h3{
     text-align: center;
+    font-size: 1vw;
 }
 .service>div>p{
     text-align: center;
@@ -859,7 +879,7 @@ div.underline{
     color: #fff;
     border: none;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     padding: 10px 20px;
     cursor: pointer;
     animation: infinite-pulse 2s ease-in-out infinite;
@@ -883,7 +903,7 @@ div.underline{
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1vw;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -936,9 +956,29 @@ div.underline{
     height: 10vh;
 }
 .languadeborder>i{
-    font-size: 6.5rem;
+    font-size: 6vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    animation: 0.6s;
+}
+.languadeborder>i:nth-child(1):hover{
+    transition: 0.5s;
+    color: #5382A1;
+}
+.languadeborder>i:nth-child(2):hover{
+    transition: 0.5s;
+    color: #F0DB4F;
+}
+.languadeborder>i:nth-child(3):hover{
+    transition: 0.5s;
+    color: #E34F26;
+}
+.languadeborder>i:nth-child(4):hover{
+     transition: 0.5s;
+     color: #1572B6;
+ }
+.languadeborder>i:not(:hover){
+    transition: 0.5s;
 }
 .languadeborder>i:nth-child(1){
     padding-left: 10vw;
@@ -949,7 +989,6 @@ div.underline{
 .languadeborder>i:nth-child(4){
     padding-right: 0;
 }
-
 
 
 
@@ -1183,6 +1222,7 @@ position: absolute;
 
 .project:hover {
     transform: translateY(-4vh);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
 }
 
 .project-overlay {
@@ -1199,6 +1239,7 @@ position: absolute;
 
 .project:hover .project-overlay {
     transform: translateY(0);
+
 }
 .project-container>div:nth-child(1){
     background-image: url("../image/D24Hostal.png");

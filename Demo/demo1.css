@@ -1,0 +1,45 @@
+.section1{
+    height: 200vh;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    cursor: pointer;
+    animation: arrow-bounce 2s infinite;
+}
+
+.arrow-down:hover {
+    border-color: #333;
+}
+@keyframes arrow-bounce {
+    0% {
+        bottom: 20px;
+    }
+    50% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
