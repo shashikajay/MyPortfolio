@@ -70,8 +70,8 @@ section{
 .nav-button {
     background: transparent;
     color: #fff;
-    border: 0.4vw solid #fff;
-    border-radius: 4vw;
+    border: 0.3vw solid #fff;
+    border-radius: 0.5vw;
     padding: 0.5vw 1vw;
     margin-right: 4vw;
     font-size: 1vw;
@@ -82,8 +82,8 @@ section{
 
 .nav-button:hover {
     background: #fff;
-    color: #917FB3;
-    border: 0.3vw solid #917FB3;
+    color: #000000;
+    border: 0.3vw solid transparent;
     box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.5);
 }
 .headerbutton {
@@ -98,9 +98,9 @@ section{
     scale: 0.9;
 }
 .nav-button:active{
-    color: #fff;
-    background: #917FB3;
-    border: solid #fff;
+    color: #000000;
+    background: #ffffff;
+    border: solid transparent;
 }
 
 
@@ -570,7 +570,8 @@ div.underline{
 
 }
 .intro-button:hover {
-    border: solid #917FB3;
+    scale: 1.1;
+    border: solid #000000;
 }
 
 .intro-button:active {
@@ -847,6 +848,50 @@ div.underline{
     font-weight: bold;
     color: #171717;
 }
+
+.resume-button {
+    left: 50%;
+    bottom: 8vh;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 0.9vw 1.8vw;
+    background-color: #0c0c0c;
+    border: 0.15vw solid #fff;
+    color: #fff;
+    border-radius: 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.25vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.resume-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.resume-button:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
+}
+
+.resume-button:hover::before {
+    left: 0;
+}
+
 
 
 #services{
