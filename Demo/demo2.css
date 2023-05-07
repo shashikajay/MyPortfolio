@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+.hire-me-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.hire-me-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.hire-me-button:hover:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent white white;
+    transform: translateX(-50%) translateY(-50%);
+    animation: checkmark 0.5s ease-out forwards;
+}
+
+@keyframes checkmark {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+    }
+}
