@@ -87,6 +87,7 @@ section{
     align-items: center;
 }
 
+
 .headerbutton>li>a {
     text-decoration: none;
     color: #fff;
@@ -710,7 +711,7 @@ div.underline{
     display: block;
     height: 100%;
     border-radius: 100vw;
-    font-size: 0.8rem;
+    font-size: 0.6vw;
     left: -1%;
     position: relative;
     overflow: hidden;
@@ -719,27 +720,27 @@ div.underline{
 
 .skill-bars li .progress.percent80 span {
     width: 80%;
-    background: #000;
+    background: #171717;
 }
 
 .skill-bars li .progress.percent90 span {
     width: 90%;
-    background: #000;
+    background: #171717;
 }
 
 .skill-bars li .progress.percent85 span {
     width: 85%;
-    background: #000;
+    background: #171717;
 }
 
 .skill-bars li .progress.percent83 span {
     width: 83%;
-    background: #000;
+    background: #171717;
 }
 
 .skill-bars li .progress.percent75 span {
     width: 75%;
-    background: #000;
+    background: #171717;
 }
 
 .skill-bars li .progress span:after {
@@ -749,7 +750,7 @@ div.underline{
     top: -25px;
     font-size: 1rem;
     font-weight: bold;
-    color: #000;
+    color: #171717;
 }
 
 
@@ -1098,6 +1099,118 @@ position: absolute;
 #projects{
     position: relative;
 }
+.project-about{
+    position: relative;
+    height: 22vh;
+    width: 35vw;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.project-about>h5:nth-child(1){
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4vw;
+    font-size: 1.2vw;
+    font-weight: 900;
+    margin: auto;
+}
+.project-about>h1:nth-child(2){
+    margin-top: 2.5vh;
+}
+.project-about>p{
+    font-size: 0.9vw;
+    opacity: 40%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.project-about>p:hover{
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+
+#projects {
+    height: 100vh;
+    z-index: 50;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.project {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover .project-overlay {
+    transform: translateY(0);
+}
+.project-container>div:nth-child(1){
+    background-image: url("../image/D24Hostal.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(2){
+    background-image: url("../image/eventmanagement.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(3){
+    background-image: url("../image/pharmacy.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(4){
+    background-image: url("../image/portfolio.PNG");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #contact{
     height: 100vh;
     position: relative;
