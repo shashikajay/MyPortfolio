@@ -91,7 +91,7 @@ body{
         right: 20vw;
     }
 }
-.resume-button {
+.hire-me {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -107,7 +107,7 @@ body{
     z-index: 1;
 }
 
-.resume-button::before {
+.hire-me::before {
     content: "";
     display: block;
     position: absolute;
@@ -120,11 +120,11 @@ body{
     z-index: -1;
 }
 
-.resume-button:hover {
+.hire-me:hover {
     color: #000;
     background-color: #fff;
 }
 
-.resume-button:hover::before {
+.hire-me:hover::before {
     left: 0;
 }
