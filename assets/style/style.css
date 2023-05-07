@@ -235,7 +235,7 @@ section {
     transition: transform 0.5s ease-in-out;
 }
 
-#intro::before {
+/*#intro::before {
     content: "";
     background-image: url(../image/intro.jpg) ;
     background-position: center bottom;
@@ -247,25 +247,51 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-}
-#intro>div>div{
+}*/
+#intro>div>div {
     z-index: 10;
 }
 
-/*#intro {
+
+/*
+.introphoto{
     background: #151515 url(../image/intro.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     min-height: 720px;
     display: table;
-    position: relative;
+    position: absolute;
     text-align: center;
     opacity: 0.3;
-}*/
+    z-index: 1001;
+}
+*/
+
+
+
+
+#intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../image/intro.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background-color: black;
+}
 #intro>div:nth-child(1){
     position: relative;
     height: 21vh;
