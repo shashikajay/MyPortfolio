@@ -1,0 +1,15 @@
+/* Define the keyframes for the loading animation */
+
+i{
+    color: black;
+    font-size: 5vw;
+}
+
+
+/* Apply the original loading animation for the Discord icon when clicked */
+.fa-discord.clicked {
+    animation-name: discord-loading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

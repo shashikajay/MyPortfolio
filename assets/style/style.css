@@ -1519,6 +1519,21 @@ position: absolute;
 .socialize>div>a:nth-child(4)>i:hover{
     color: #7289da;
 }
+@keyframes discord-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.discord>i:hover {
+    animation-name: discord-loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 .contact-me {
     position: relative;
     left: 50%;
@@ -1638,7 +1653,6 @@ position: absolute;
     color: red;
     opacity: 1;
 }
-
 
 
 
