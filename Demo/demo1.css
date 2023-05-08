@@ -31,7 +31,7 @@ section{
 .back-to-top i {
     font-size: 1vw;
 }
-/* Styles for the sticky button container */
+
 .sticky-btn-container {
     position: fixed;
     bottom: 20px;
@@ -39,7 +39,7 @@ section{
     z-index: 999;
 }
 
-/* Styles for the sticky button */
+
 .sticky-btn {
     display: flex;
     justify-content: center;
@@ -52,25 +52,25 @@ section{
     transition: background-color 0.3s ease;
 }
 
-/* Styles for the arrow icon */
+
 .sticky-btn i {
     font-size: 24px;
     color: #fff;
 }
 
-/* Styles for the animated arrow */
+
 .sticky-btn.active i::before {
     content: "\f077";
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
 
-/* Styles for the hover state */
+
 .sticky-btn:hover {
     background-color: #555;
 }
 
-/* Styles for the active state */
+
 .sticky-btn:active {
     background-color: #222;
 }
