@@ -720,6 +720,23 @@ div.underline{
     cursor: pointer;
     opacity: 100%;
 }
+
+.myPhoto{
+    margin-top: 2vh;
+    background-image: url(../image/makima.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 7.3vw;
+    height: 14vh;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+.myPhoto:hover{
+    scale: 1.1;
+}
+
+
+
 .profile\&skill{
     height: 61vh;
 }
