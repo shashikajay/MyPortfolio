@@ -1586,7 +1586,46 @@ position: absolute;
     color: #222831;
     background-color: #ffffff;
 }
-
+.footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.footer>div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.footer>div{
+    padding: 0 1vw;
+}
+.footer>div>a{
+    align-content: center;
+    justify-content: center;
+    height: 2vh;
+    transition: 0.5s;
+    padding-left: 0.3vw;
+    text-decoration: none;
+}
+.footer>div>a>h5:hover{
+    color: red;
+}
+.footer>div>a>h5{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    color: white;
+    position: absolute;
+    top: 37%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer>div>a>h5:hover{
+    color: red;
+}
 
 
 
