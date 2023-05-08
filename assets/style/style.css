@@ -67,6 +67,20 @@ section{
 .quickSocial>a>i:not(:hover){
     transition: 0.3s;
 }
+.quickSocial>a:nth-child(1)>i:hover{
+    transition: 0.3s;
+    color: #7289da;
+}
+.quickSocial>a:nth-child(2)>i:hover{
+    transition: 0.3s;
+    color: #181717;
+}
+.quickSocial>a:nth-child(3)>i:hover{
+    transition: 0.3s;
+    color: #0088cc;
+}
+
+
 .nav-button {
     background: transparent;
     color: #fff;
@@ -1434,7 +1448,7 @@ position: absolute;
     text-align: center;
 }
 .details>i{
-    font-size: 5.5vw;
+    font-size: 3vw;
 }
 .details>h4{
     font-size: 1vw;
@@ -1442,9 +1456,94 @@ position: absolute;
     font-weight: 600;
     text-transform: uppercase;
 }
-.details>p>a{
-   
+.details>p>a,
+.details>p{
+    opacity: 0.7;
     color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.details>p>a:hover{
+    transition: 0.3s;
+    opacity: 1;
+}
+.socialize{
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    top: 22%;
+    padding-left: 8vw;
+    text-align: center;
+}
+.socialize>h4{
+    font-size: 1.3vw;
+}
+.socialize>div{
+    display: flex;
+}
+.socialize>div>a{
+    position: relative;
+    width: 0vw;
+    align-items: center;
+    margin: 0 3vw;
+}
+.socialize>div>a>i{
+    margin: 0 2vw;
+    color: white;
+    font-size: 3vw;
+}
+
+
+
+
+.contact-me {
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222831;
+    color: #ffffff;
+    width: 40vw;
+    height: 50vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contact-me>h3:nth-child(1){
+    font-size: 1vw;
+    font-family: "poppins", sans-serif;
+    letter-spacing: 0.2vw;
+}
+.contact-me input[type="text"],
+.contact-me input[type="email"],
+.contact-me textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.4vw;
+    box-sizing: border-box;
+}
+
+.contact-me input[type="button"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-me input[type="button"]:hover {
+    color: #222831;
+    background-color: #ffffff;
 }
 
 
