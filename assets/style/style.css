@@ -125,6 +125,7 @@ section{
 
 
 .headerbutton>li>a {
+    display: flex;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s ease-in-out;
@@ -135,7 +136,8 @@ section{
 }
 .headerbutton>li{
     width: 5.6vw;
-    padding-right: 3vw;
+    /*padding-right: 3vw;*/
+    margin-right: 2.5vw;
 }
 .headerbutton>li:nth-child(4){
     padding-right: 6vw;
