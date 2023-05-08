@@ -675,6 +675,37 @@ div.underline{
     text-align: center;
 }
 
+.back-to-top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 1.5vw;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background-color: #fff;
+    color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+}
+.back-to-top:active{
+    scale: 0.8;
+}
+
+.back-to-top i {
+    font-size: 1.5vw;
+
+}
 
 
 
