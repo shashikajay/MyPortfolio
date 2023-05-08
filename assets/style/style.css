@@ -571,6 +571,7 @@ div.underline{
     display: flex;
     margin-top: 10vh;
     margin-left: 24vw;
+    animation: scaling 3s;
 }
 
 .intro-button {
@@ -610,6 +611,7 @@ div.underline{
     position: relative;
     margin: 2.5vw;
     color: white;
+    animation: scaling 3s;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -1669,6 +1671,17 @@ position: absolute;
 .footer>div>a>h5:hover{
     color: red;
     opacity: 1;
+}
+
+@keyframes scaling {
+    from{
+        scale: 0;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 
