@@ -16,7 +16,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     z-index: 999;
 }
@@ -25,7 +25,7 @@ section{
     background-color: #fff;
     color: #333;
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .back-to-top i {

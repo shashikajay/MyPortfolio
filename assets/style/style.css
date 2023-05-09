@@ -692,6 +692,8 @@ div.underline{
     z-index: 999;
 }
 
+
+
 .back-to-top:hover {
     background-color: #fff;
     color: #333;
@@ -704,18 +706,19 @@ div.underline{
 
 .back-to-top i {
     font-size: 1.5vw;
-
+    animation: upAndDown 1.5s ease-in-out infinite;
 }
-
-
-
-
-
-
-
-
-
-
+@keyframes upAndDown {
+    0% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(3px);
+    }
+}
 
 
 #about{
@@ -1495,7 +1498,7 @@ position: absolute;
     transform: translateX(-50%);
 }
 .contact-details>div{
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     margin: 0.2vh 5vw ;
     text-align: center;
     height: 20vh;
@@ -1626,6 +1629,7 @@ position: absolute;
     border: none;
     border-radius: 0.4vw;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 .contact-me>input[type="text"],
 .contact-me>input[type="subject"],
