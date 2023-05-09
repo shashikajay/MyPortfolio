@@ -768,6 +768,7 @@ div.underline{
     height: 14vh;
     border-radius: 100%;
     transition: 0.5s;
+    border: solid white 0.2vw;
 }
 .myPhoto:hover{
     scale: 1.1;
