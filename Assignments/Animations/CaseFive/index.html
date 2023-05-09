@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseFive</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body>section{
+            animation: slider 10s infinite alternate;
+            animation-delay: 2s;
+            position: relative;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 500%;
+            display: inline-block;
+        }
+
+        body>section>section{
+            height: 100%;
+            width: 100vw;
+            display: inline-block;
+        }
+
+        body>section>section>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body>section>section:nth-child(5){
+            width: 98vw;
+        }
+        
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100vw;
+            }
+            50%{
+                left: -200vw;
+            }
+            75%{
+                left: -300vw;
+            }
+            100%{
+                left: -400vw;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <section><img src="assets/img/carti.jpg"></section>
+        <section><img src="assets/img/cat.jpg"></section>
+        <section><img src="assets/img/kanye.jpg"></section>
+        <section><img src="assets/img/n.webp"></section>
+        <section><img src="assets/img/shrek.jpg"></section>
+    </section>
+</body>
+</html>
