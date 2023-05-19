@@ -1058,13 +1058,13 @@ div.underline{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 0vh;
 }
 
 .project {
-    width: 28vw;
-    height: 30vh;
-    margin: 4vh 5vw;
+    width: 25vw;
+    height: 28vh;
+    margin: 3vh 5vw;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -1117,6 +1117,51 @@ div.underline{
     background-position: center;
     border-radius: 3vh;
 }
+.assignment {
+    top: 2vh;
+    bottom: 8vh;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 0.9vw 1.8vw;
+    background-color: #0c0c0c;
+    border: 0.15vw solid #fff;
+    color: #fff;
+    border-radius: 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.25vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    text-decoration: none;
+}
+.assignment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.assignment:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
+}
+
+.assignment:hover::before {
+    left: 0;
+}
+.assignment:active{
+    scale: 0.98;
+}
+
 
 
 
