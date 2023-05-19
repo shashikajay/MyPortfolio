@@ -505,7 +505,7 @@ div.underline{
 .social-media{
     padding-left: 0;
     position: relative;
-    bottom: 0vh;
+    bottom: 0;
 }
 .social-media>li{
     position: relative;
@@ -1058,7 +1058,7 @@ div.underline{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0vh;
+    margin-top: 0;
 }
 
 .project {
@@ -1270,7 +1270,7 @@ div.underline{
 }
 .socialize>div>a{
     position: relative;
-    width: 0vw;
+    width: 0;
     align-items: center;
     margin: 0 3vw;
 }
