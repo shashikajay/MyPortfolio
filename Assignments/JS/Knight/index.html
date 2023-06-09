@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNIGHT</title>
+
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        section{
+            width: 100vw;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .lights{
+            width: 1000px;
+            height: 40px;
+            border: 1px solid lightslategrey;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .lights div{
+            height: 40px;
+            /*border: 1px solid grey;*/
+            flex-grow: 1;
+        }
+
+        #buttons{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #buttons button{
+            width: 80px;
+            height: 30px;
+            color: white;
+        }
+
+        #buttons button:first-child{
+            background-color: green;
+        }
+
+        #buttons button:last-child{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div class="lights">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+
+</section>
+
+<script src="assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script>
+
+let colors=["#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",'#eed2d2',"#D29F9F","#B96868","#FF0000"];
+let colors2=["#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",'#FF0000',"#B96868","#D29F9F","#eed2d2"];
+let divs=document.getElementsByClassName("box");
+
+let audioKITT=new Audio();
+audioKITT.src="assets/audio/KITTSound.mp3";
+
+console.log(divs.length);
+console.log(colors2.length);
+
+
+let count=0;
+let reverse=true;
+let interval;
+
+
+$("#start").click(function (){
+
+    audioKITT.play();
+    clearInterval(interval);
+
+    interval = setInterval(function (){
+
+        if (reverse){
+            for (let i = 0; i <divs.length; i++) {
+                divs[i].style.backgroundColor=colors[i];
+            }
+
+            let lastValue=colors.pop();
+            colors.unshift(lastValue);
+            count++;
+
+            if (count==12){
+                reverse=false;
+            }
+
+        }if (reverse==false){
+
+            let lastColor = colors2.shift();
+            colors2.push(lastColor);
+
+            for (let i = 0; i < divs.length; i++) {
+                divs[i].style.backgroundColor = colors2[i];
+            }
+            count--;
+
+            if (count==1){
+                reverse=true;
+            }
+        }
+
+    },60);
+});
+
+
+$("#stop").click(function (){
+    audioKITT.pause();
+    clearInterval(interval);
+});
+
+</script>
+
+</body>
+</html>
