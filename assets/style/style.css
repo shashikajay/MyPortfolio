@@ -11,15 +11,6 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-p{
-    font-size: 0.9vw;
-}
-h1{
-    font-size: 1.5vw;
-}
-h2{
-   font-size: 1.2vw;
-}
 body::-webkit-scrollbar{
     display: none;
 }
