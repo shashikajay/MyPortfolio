@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Portfolio</title>
+  <!-- Add your CSS and other necessary meta tags and stylesheets -->
+  <style>
+    /* Loader styles */
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .loader span {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #000;
+      border-radius: 50%;
+      animation: loaderAnimation 1s infinite ease-in-out alternate;
+      margin: 0 3px;
+    }
+
+    @keyframes loaderAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Hide loader when content is loaded */
+    .loaded .loader {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<!-- Loader element -->
+<div class="loader">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- The rest of your portfolio content -->
+<header id="header">
+  <!-- Your header content -->
+</header>
+<main id="main">
+  <!-- Your main content -->
+</main>
+<footer id="footer">
+  <!-- Your footer content -->
+</footer>
+
+<!-- Add your JavaScript files and other necessary scripts -->
+<script>
+  // Wait for the window to load
+  window.addEventListener("load", function() {
+    // Hide the loader when the content is loaded
+    document.querySelector("body").classList.add("loaded");
+
+    // Add your code to load additional portfolio content here
+  });
+
+</script>
+</body>
+</html>

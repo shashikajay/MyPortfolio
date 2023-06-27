@@ -1,0 +1,23 @@
+#loader1 {
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ffffff;
+}
+
+#loader1 > div {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("../image/loaderW.gif");
+    background-size: cover;
+    background-position: center;
+}
