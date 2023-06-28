@@ -25,6 +25,7 @@ document.getElementById("btnOrder").addEventListener("click", function(){
     document.getElementById("placeOrder").style.display="none";
 });
 document.getElementById("btnPlaceOrder").addEventListener("click", function(){
+    getTodayDate();
     document.getElementById("customers").style.display="none";
     document.getElementById("item").style.display="none";
     document.getElementById("orders").style.display="none";

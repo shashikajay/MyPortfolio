@@ -28,6 +28,9 @@ function incrementCusId(currentID) {
     }
 }
 
+
+
+
 incrementCusId('no');
 cusIDF.val(cusId);
 
@@ -52,12 +55,9 @@ function addCustomer(){
     let cusAddress = cusAddressF.val();
     let cusContact = cusContactF.val();
 
-    lastTr=$('<tr> <td>'+ cusID +'</td> <td>'+ cusName +'</td> <td>'+ cusAddress +'</td> <td>'+ cusContact +'</td> </tr>');
-    $('#tblCustomers').append(lastTr);
-
-    //adding the customer to the list
-
+    //adding the customer to the list and to the table
     customerList.push( new Customer(cusID,cusName,cusAddress,cusContact));
+    addCustomersToTable()
 
     customerList[0].name;
 
@@ -71,6 +71,16 @@ function addCustomer(){
 
     incrementCusId(lastTr.find('td:first').text());
     cusIDF.val(cusId);
+}
+
+function addCustomersToTable() {
+    tblCustomers.empty();
+
+    for (let customer of customerList) {
+        let row = $('<tr> <td>'+ customer.cid +'</td> <td>'+ customer.name +'</td> <td>'+ customer.address +'</td> <td>'+ customer.contact +'</td> </tr>');
+        tblCustomers.append(row);
+        lastTr =row;
+    }
 }
 
 //Button Add function

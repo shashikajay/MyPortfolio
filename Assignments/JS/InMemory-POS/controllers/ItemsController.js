@@ -56,12 +56,9 @@ function addItem() {
     let itemPrice = itemPF.val();
     let itemQty = itemQtyF.val();
 
-    lastITr=$('<tr> <td>'+ iID +'</td> <td>'+ itemDesc +'</td> <td>'+ itemPrice +'</td> <td>'+ itemQty +'</td> </tr>');
-    $('#tblItemBody').append(lastITr);
-
-    //adding the customer to the list
-    itemList.push(new Items(iID ,itemDesc, itemPrice,itemQty));
-
+    //adding the customer to the list and to the table
+    itemList.push(new Items(iID ,itemDesc,itemQty, itemPrice));
+    addItemsToTable();
     console.log(itemList);
     loadItemOptionIds();
 
@@ -72,6 +69,16 @@ function addItem() {
 
     btnItemUpdate.prop('disabled',false);
     btnItemDelete.prop('disabled',false);
+}
+
+function addItemsToTable() {
+    tblItems.empty();
+
+    for (let item of itemList) {
+        let row = $('<tr> <td>'+ item.iId +'</td> <td>'+ item.desc +'</td> <td>'+ item.unitP +'</td> <td>'+ item.qty +'</td> </tr>');
+        lastITr =row;
+        tblItems.append(row);
+    }
 }
 
 //Button Add function
@@ -215,7 +222,7 @@ itemQtyF.keyup(function (event){
         itemQtyF.css('border-color', '#dee2e6');
 
         if (event.key ==='Enter'){
-            addCustomer();
+            addItem();
         }
     }else {
         itemQtyF.css('border-color', 'red');

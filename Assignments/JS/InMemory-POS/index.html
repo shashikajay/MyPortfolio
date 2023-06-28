@@ -175,7 +175,7 @@
       <th style="background-color: #ffa5a5" scope="col">Total</th>
     </tr>
     </thead>
-    <tbody>
+    <tbody id="allOrderTable">
 
     </tbody>
   </table>
@@ -186,7 +186,7 @@
 
 <main class="container-fluid" id="placeOrder">
 
-  <h2 style="color: #000000" class="mt-2 border-bottom">Place Order</h2>
+  <h2 style="color: #C147E9" class="mt-2 border-bottom">Place Order</h2>
 
   <section class="row mt-3 border border-dark rounded p-3">
     <form action="">
@@ -195,7 +195,7 @@
         <div class="col">
           <div class="input-group">
             <span class="input-group-text">Order ID</span>
-            <input class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>
+            <input id="currentOrderID" class="form-control" type="text" aria-label="Disabled input example" disabled>
           </div>
         </div>
         <div class="col">
@@ -300,11 +300,11 @@
         </table>
       </div>
       <div class="col-1 ms-4">
-        <div class="row mb-3">
+        <!--<div class="row mb-3">
           <button type="button" class="btn btn-outline-warning">Update</button>
-        </div>
+        </div>-->
         <div class="row mb-3">
-          <button type="button" class="btn btn-outline-danger">Delete</button>
+          <button id="deleteCartItem" type="button" class="btn btn-outline-danger">Delete</button>
         </div>
       </div>
     </div>
